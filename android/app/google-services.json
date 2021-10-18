@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "196616493791",
+    "project_id": "signinphone-ad965",
+    "storage_bucket": "signinphone-ad965.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196616493791:android:13a88cc7e37448c0ba276a",
+        "android_client_info": {
+          "package_name": "com.signup.sign_up_phone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196616493791-3lsb62mrgp6a3lpdc61jpc7de1smmtom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsajXmN4t-RMK-yWfSD3vIhV2z61DDDd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196616493791-3lsb62mrgp6a3lpdc61jpc7de1smmtom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
