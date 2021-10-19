@@ -83,9 +83,9 @@ class SignUpView extends GetView<SignUpController> {
       body: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Obx(
-          () => controller.checkPhone == false
+          () => controller.checkPhone.value == false
               ? _buildPhoneNumber()
-              : controller.isLoading == true
+              : controller.isLoading.value == true
                   ? Center(
                       child: CircularProgressIndicator(),
                     )
