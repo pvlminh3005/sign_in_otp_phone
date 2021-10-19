@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
 
 import '../controllers/sign_up_controller.dart';
 
@@ -9,14 +10,27 @@ class SignUpView extends GetView<SignUpController> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        TextField(
-          controller: controller.phoneController,
+        // TextField(
+        //   controller: controller.phoneController,
+        //   decoration: InputDecoration(
+        //     border: OutlineInputBorder(),
+        //     labelText: 'Phone',
+        //     prefixIcon: Icon(Icons.phone),
+        //   ),
+        //   keyboardType: TextInputType.phone,
+        // ),
+        IntlPhoneField(
+          // controller: controller.phoneController,
           decoration: InputDecoration(
-            border: OutlineInputBorder(),
-            labelText: 'Phone',
-            prefixIcon: Icon(Icons.phone),
+            labelText: 'Phone Number',
+            border: OutlineInputBorder(
+              borderSide: BorderSide(),
+            ),
           ),
-          keyboardType: TextInputType.phone,
+          initialCountryCode: 'VN',
+          onChanged: (phone) {
+            controller.phoneController.text = phone.completeNumber;
+          },
         ),
         RaisedButton(
           onPressed: controller.verifyPhoneNumber,

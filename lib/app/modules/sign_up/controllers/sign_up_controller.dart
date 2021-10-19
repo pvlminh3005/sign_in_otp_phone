@@ -56,7 +56,7 @@ class SignUpController extends GetxController {
           await myAuth.signInWithCredential(phoneAuthCredential);
       if (authCredential.user != null) {
         isLoading.value = false;
-        Get.toNamed(Routes.HOME);
+        Get.offAllNamed(Routes.HOME);
       }
     } on FirebaseAuthException catch (e) {
       Get.snackbar('ERROR', e.message!, snackPosition: SnackPosition.BOTTOM);
